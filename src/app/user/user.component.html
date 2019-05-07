@@ -1,0 +1,31 @@
+<fieldset class="login-form divShadow">
+  <legend>User Details :
+    <button (click)="showForms(true)">Edit</button>
+  </legend>
+  <div *ngIf="!showForm">
+    <div>Email Address : {{user.email}}</div>
+    <div>Postal Address : {{user.postalAddress}}</div>
+    <div> Phone Number : {{user.phoneNumber}} </div>
+    <div> Favourite Band : {{user.favouriteBand}}</div>
+  </div>
+
+  <div *ngIf="showForm">
+    <div>
+      Email Address :
+      <input type="text" [(ngModel)]="user.email" name="email">
+    </div>
+    <div>
+      Postal Address :
+      <input type="text" [(ngModel)]="user.postalAddress" name="postalAddress">
+    </div>
+    <div>
+      Phone Number :
+      <input type="text" [(ngModel)]="user.phoneNumber" name="phoneNumber">
+    </div>
+    <div>
+      Favourite Band :
+      <input type="text" class="form-control" [(ngModel)]="user.favouriteBand" name="favouriteBand">
+    </div>
+    <button (click)="showForms(false)">Update</button>
+  </div>
+</fieldset>

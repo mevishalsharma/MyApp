@@ -1,0 +1,28 @@
+<div *ngIf="rowSelected">
+  <app-user [user]=selectUser (updateUser)="updateUser($event)"></app-user>
+</div>
+<fieldset>
+  <legend><h4>User Information</h4></legend>
+  <div>
+      <table>
+        <tr>
+            
+          <th>Name</th>
+          <th>Email</th> 
+          <th>Account Number</th>
+          <th>Country</th>
+          <th>Date Joined</th>         
+
+        </tr>
+        <tr *ngFor="let list of userList | paginate: { itemsPerPage:2, currentPage: p }; let i = index">
+             
+          <td><a (click)="onClick(list)">{{list.name}}</a></td>
+          <td>{{list.email}}</td>
+          <td>{{list.accountNumber}}</td>
+          <td>{{list.country}}</td>
+          <td>{{list.dateJoined}}</td>         
+        </tr>
+      </table>
+      <pagination-controls (pageChange)="p = $event"></pagination-controls>
+    </div>
+</fieldset>

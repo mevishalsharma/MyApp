@@ -1,0 +1,57 @@
+[
+        {
+            "id":"1",
+            "name": "George Harrison",
+            "email": "george@gmail.com",
+            "accountNumber": "555-1234",
+            "country": "England",
+            "dateJoined": "21 Feb 2018",
+            "postalAddress": "Main Street",
+            "phoneNumber": "8874222224",
+            "favouriteBand": "The Rolling Stone"
+        },
+        {
+            "id":"2",            
+            "name": "Paul Sawage",
+            "email": "paul@gmail.com",
+            "accountNumber": "777-1234",
+            "country": "England",
+            "dateJoined": "28 Feb 2018",
+            "postalAddress": "Main Street",
+            "phoneNumber": "8874222224",
+            "favouriteBand": "The Rolling Stone"
+        },
+        {
+            "id":"3",            
+            "name": "Vishal Sharma",
+            "email": "vishal@gmail.com",
+            "accountNumber": "899-1234",
+            "country": "Ireland",
+            "dateJoined": "28 Feb 2018",
+            "postalAddress": "Main Street",
+            "phoneNumber": "8874222224",
+            "favouriteBand": "The Rolling Stone"
+        },
+        {
+            "id":"4",            
+            "name": "Paul Sawage",
+            "email": "paul@gmail.com",
+            "accountNumber": "777-1234",
+            "country": "England",
+            "dateJoined": "28 Feb 2018",
+            "postalAddress": "Main Street",
+            "phoneNumber": "8874222224",
+            "favouriteBand": "The Rolling Stone"
+        },
+        {
+            "id":"5",            
+            "name": "Tim Griffin",
+            "email": "tim@gmail.com",
+            "accountNumber": "666-1234",
+            "country": "Ireland",
+            "dateJoined": "21 Feb 2018",
+            "postalAddress": "37 Blackrock",
+            "phoneNumber": "8874222224",
+            "favouriteBand": "The Rolling Stone"
+        }
+    ]
