@@ -8,19 +8,14 @@ import { UserserviceService } from '../service/userservice.service';
 })
 export class UsersComponent implements OnInit {
 
-   
   userList: any;
   rowSelected: boolean = false;
   selectUser: any;
-
-  
+ 
    p: number = 1;
   constructor(private userServ: UserserviceService) { 
   
   }
-  
-
-   
   
   ngOnInit() {
     this.getData();
@@ -28,9 +23,7 @@ export class UsersComponent implements OnInit {
 
   getData() {
     this.userServ.getUserList().then(data => {
-      this.userList = data;
-
-      
+      this.userList = data;   
     });
   }
 
@@ -45,7 +38,6 @@ export class UsersComponent implements OnInit {
     d1 = data;
     this.userList.remove(x => x.id == data.id);
     this.userList.push(d1);
-
   }
   
 }

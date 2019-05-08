@@ -16,7 +16,7 @@
         </tr>
         <tr *ngFor="let list of userList | paginate: { itemsPerPage:2, currentPage: p }; let i = index">
              
-          <td><a (click)="onClick(list)">{{list.name}}</a></td>
+          <td><a (click)="onClick(list)" style="cursor: pointer;"><u>{{list.name}}</u></a></td>
           <td>{{list.email}}</td>
           <td>{{list.accountNumber}}</td>
           <td>{{list.country}}</td>
